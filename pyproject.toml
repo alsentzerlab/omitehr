@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omitehr"
+version = "0.1.0"
+description = "Clinical-summary omission detection"
+requires-python = ">=3.10"
+dependencies = [
+    "torch", "transformers", "sentencepiece", "numpy", "scipy",
+    "scikit-learn", "medspacy", "loguru",
+]
+
+[project.optional-dependencies]
+trace = ["trace @ git+https://github.com/alsentzerlab/TRACE.git"]
+
+[tool.setuptools.packages.find]
+include = ["omitehr*"]

@@ -1,0 +1,8 @@
+torch
+transformers
+sentencepiece
+numpy
+scipy
+scikit-learn
+medspacy
+loguru

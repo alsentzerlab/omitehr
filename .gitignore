@@ -1,0 +1,36 @@
+data/**
+.env
+# Scheduler output and local review exports are generated artifacts; review
+# files may contain raw clinical text and must never be committed.
+/slurm-*.out
+/bhc_omission_review_*.json
+/bhc_omission_review_*.zip
+# Local review exports can contain raw clinical text.  Keep generated review
+# artifacts out of version control even when they are written at repository root.
+/*.html
+/claim_candidates_*.jsonl
+/contextual_chunk_review_responses.json
+/full_summary*_review*.json
+/results/bhc_ds_*/
+/results/bhc_vs_discharge_*
+__pycache__/
+*.py[cod]
+.pytest_cache/
+temp/**
+notebooks/**
+.venv/**
+.venv-llm/**
+.venv*/**
+*.egg-info/
+checkpoints/**
+runs/**
+outputs/**
+*.pt
+*.pth
+*.ckpt
+*.npz
+full_summary_review.json
+full_summary_section_review.json
+full_summary_review_manifest.json
+full_summary_short_manifest.json
+full_summary_raw_review.json
