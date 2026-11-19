@@ -2,7 +2,7 @@
 
 A reference-free framework that learns clinical salience from historical clinician-written summaries to identify clinically important information missing from LLM-generated summaries.
 
-<img width="1796" height="868" alt="omitehr_pipeline" src="https://github.com/user-attachments/assets/bf586f8a-8ba7-4de6-aff1-c8e710aff6b6" />
+<img alt="OmitEHR pipeline" src="assets/omitehr_pipeline.png" />
 
 
 ## Overview
